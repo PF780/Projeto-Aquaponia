@@ -21,7 +21,7 @@
     <!-- Sobre o Projeto -->
     <section id="sobre">
         <h2>Sobre o Projeto</h2>
-        <p> O projeto "Explorando a Cultura Maker e a Programação com Arduino" visa capacitar os estudantes do 2º ano do ensino médio da Escola Estadual Bairro Francisco Castilho, promovendo a criatividade e habilidades práticas por meio da programação com Arduino. A iniciativa busca integrar conceitos de eletrônica e programação nas aulas de prática experimental e física, estimulando o pensamento crítico e o interesse por carreiras nas áreas de ciência, tecnologia, engenharia e matemática (STEM). Objetivos Específicos: Introduzir conceitos básicos da cultura maker e programação com Arduino. Fomentar a criatividade e a resolução de problemas. Proporcionar atividades práticas com kits Arduino. Estimular colaboração e trabalho em equipe. Integrar a cultura maker nas aulas de prática experimental e física. Ações: Apresentar conceitos e princípios da cultura maker. Integrar construção e programação nas aulas. Disponibilizar kits Arduino e materiais para as atividades. Promover sessões de brainstorming e discussões em grupo. Realizar atividades extracurriculares, como workshops. Estabelecer parcerias com profissionais da área para palestras e mentorias. Metas: Integrar atividades de Arduino nas aulas. Disponibilizar kits para estudantes. Realizar workshops e competições extracurriculares. Firmar parcerias para palestras e mentorias. Cronograma de Desenvolvimento: Levantamento de Dados (Semanas 1-2): Análise do sistema de alimentação de peixes e coleta de dados sobre ração. Planejamento (Semana 3): Definição de requisitos técnicos e esboço do sistema automatizado. Aquisição de Materiais (Semana 4): Obtenção de kits Arduino e materiais recicláveis. Desenvolvimento do Sistema (Semanas 5-6): Programação do Arduino e criação de site para monitoramento. Montagem e Testes (Semanas 7-8): Montagem física e testes do sistema. Avaliação e Ajustes (Semana 9): Monitoramento do sistema e ajustes baseados em feedback. Apresentação dos Resultados (Semana 10): Compartilhamento dos resultados.</p>
+        <p> O projeto "Explorando a Cultura Maker e a Programação com Arduino" visa capacitar os estudantes do 2º ano do ensino médio da Escola Estadual Bairro Francisco Castilho, promovendo a criatividade e habilidades práticas por meio da programação com Arduino...</p>
     </section>
 
     <!-- Equipe -->
@@ -41,6 +41,12 @@
         <p>Na aquaponia, os resíduos dos peixes servem de nutriente para as plantas...</p>
     </section>
 
+    <!-- Botão de Votação -->
+    <section id="votacao">
+        <h2>Vote no Projeto Peixes Tech</h2>
+        <button onclick="votar()">Votar Agora</button>
+    </section>
+
     <!-- Entre em Contato -->
     <section id="contato">
         <h2>Entre em Contato</h2>
@@ -55,5 +61,23 @@
         </form>
         <p>Escola: E.E Bairro Francisco Castilho</p>
     </section>
+
+    <!-- Script para o evento de votação -->
+    <script>
+        function votar() {
+            // Dispara o evento de votação
+            const votarEvent = new Event('votar');
+            document.dispatchEvent(votarEvent);
+
+            // Redireciona para o link de votação
+            window.location.href = "https://feira2024.stembrasil.org/registrar//VisitacaoVirtual/Visualizar/0fe836c6ac03a2abbcd47dfc38880d22";
+        }
+
+        // Escuta para o evento de votação
+        document.addEventListener('votar', (event) => {
+            console.log("Evento de votação disparado:", event);
+            // Aqui você pode adicionar lógica adicional ao evento, se necessário
+        });
+    </script>
 </body>
 </html>

@@ -40,10 +40,16 @@
         <p>Na aquaponia, os resíduos dos peixes servem de nutriente para as plantas...</p>
     </section>
 
-    <!-- Botão de Votação -->
+    <!-- Botão de Votação com Vídeo -->
     <section id="votacao">
         <h2>Vote no Projeto Peixes Tech</h2>
-        <button onclick="votar()">Votar Agora</button>
+        <div class="votacao-content">
+            <video controls width="400">
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <button onclick="votar()">Votar Agora</button>
+        </div>
     </section>
 
     <!-- Seção de Dados com Gráficos -->
@@ -57,6 +63,10 @@
             <!-- Gráfico 2 -->
             <div class="grafico">
                 <iframe src="URL_DO_GRAFICO_2" title="Gráfico 2" width="400" height="300"></iframe>
+            </div>
+            <!-- Gráfico 3 -->
+            <div class="grafico">
+                <iframe src="URL_DO_GRAFICO_3" title="Gráfico 3" width="400" height="300"></iframe>
             </div>
             <!-- Adicione mais gráficos conforme necessário -->
         </div>

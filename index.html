@@ -27,7 +27,6 @@
     <!-- Equipe -->
     <section id="equipe">
         <h2>Equipe</h2>
-        <!-- Exemplo de Membro da Equipe -->
         <div class="membro">
             <img src="foto_membro.jpg" alt="Foto do Membro">
             <p>Nome do Membro</p>
@@ -45,6 +44,22 @@
     <section id="votacao">
         <h2>Vote no Projeto Peixes Tech</h2>
         <button onclick="votar()">Votar Agora</button>
+    </section>
+
+    <!-- Seção de Dados com Gráficos -->
+    <section id="dados">
+        <h2>Dados do Projeto</h2>
+        <div class="graficos">
+            <!-- Gráfico 1 -->
+            <div class="grafico">
+                <iframe src="URL_DO_GRAFICO_1" title="Gráfico 1" width="400" height="300"></iframe>
+            </div>
+            <!-- Gráfico 2 -->
+            <div class="grafico">
+                <iframe src="URL_DO_GRAFICO_2" title="Gráfico 2" width="400" height="300"></iframe>
+            </div>
+            <!-- Adicione mais gráficos conforme necessário -->
+        </div>
     </section>
 
     <!-- Entre em Contato -->
@@ -65,18 +80,13 @@
     <!-- Script para o evento de votação -->
     <script>
         function votar() {
-            // Dispara o evento de votação
             const votarEvent = new Event('votar');
             document.dispatchEvent(votarEvent);
-
-            // Redireciona para o link de votação
-            window.location.href = "https://feira2024.stembrasil.org/registrar//VisitacaoVirtual/Visualizar/0fe836c6ac03a2abbcd47dfc38880d22";
+            window.open("https://feira2024.stembrasil.org/registrar//VisitacaoVirtual/Visualizar/0fe836c6ac03a2abbcd47dfc38880d22", "_blank");
         }
 
-        // Escuta para o evento de votação
         document.addEventListener('votar', (event) => {
             console.log("Evento de votação disparado:", event);
-            // Aqui você pode adicionar lógica adicional ao evento, se necessário
         });
     </script>
 </body>

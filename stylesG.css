@@ -1,0 +1,16 @@
+#dados {
+    padding: 20px;
+    text-align: center;
+}
+
+#dados .graficos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#dados .grafico {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}

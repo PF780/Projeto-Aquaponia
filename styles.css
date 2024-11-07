@@ -1,7 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #003366;
-    background-color: #F1F1F1;
+    background-color: linear-gradient(to right,blue, red);
+
+    margin 0;
+    height: 100vh;
 }
 
 header {

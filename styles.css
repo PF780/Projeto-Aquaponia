@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #003366;
+    background-color: #ffffff;
     color: white;
     padding: 1em;
 }
@@ -40,7 +40,7 @@ form {
 form input, form textarea {
     padding: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #003366;
+    border: 1px solid #ffffff;
     border-radius: 5px;
 }
 
